@@ -1,0 +1,46 @@
+.main[data-variant='heading1'] {
+  font-size: 44px;
+}
+.main[data-variant='heading2'] {
+  font-size: 34px;
+}
+.main[data-variant='heading3'] {
+  font-size: 28px;
+}
+.main[data-variant='heading4'] {
+  font-size: 24px;
+}
+.main[data-variant='body1'] {
+  font-size: 20px;
+}
+.main[data-variant='body2'] {
+  font-size: 16px;
+}
+.main[data-variant='body3'] {
+  font-size: 14px;
+}
+.main[data-variant='body4'] {
+  font-size: 12px;
+}
+.main[data-variant='body5'] {
+  font-size: 10px;
+}
+.main[data-variant='body6'] {
+  font-size: 8px;
+}
+
+.main[data-weight='regular'] {
+  font-weight: 400;
+}
+
+.main[data-weight='medium'] {
+  font-weight: 500;
+}
+
+.main[data-weight='semi-bold'] {
+  font-weight: 600;
+}
+
+.main[data-weight='bold'] {
+  font-weight: 700;
+}
