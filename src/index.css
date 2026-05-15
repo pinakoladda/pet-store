@@ -1,61 +1,71 @@
 @font-face {
-  font-family: 'Gilroy';
-  src:
-    url('../public/fonts/Gilroy-Regular.woff2') format('woff2'),
-    url('../public/fonts/Gilroy-Regular.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src:
+        url('../public/fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('../public/fonts/Gilroy-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src:
-    url('../public/fonts/Gilroy-RegularItalic.woff2') format('woff2'),
-    url('../public/fonts/Gilroy-RegularItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
+    font-family: 'Gilroy';
+    src:
+        url('../public/fonts/Gilroy-RegularItalic.woff2') format('woff2'),
+        url('../public/fonts/Gilroy-RegularItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src:
-    url('../public/fonts/Gilroy-Bold.woff2') format('woff2'),
-    url('../public/fonts/Gilroy-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src:
+        url('../public/fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('../public/fonts/Gilroy-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy';
-  src:
-    url('../public/fonts/Gilroy-SemiBold.woff2') format('woff2'),
-    url('../public/fonts/Gilroy-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
+    font-family: 'Gilroy';
+    src:
+        url('../public/fonts/Gilroy-SemiBold.woff2') format('woff2'),
+        url('../public/fonts/Gilroy-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 
 body {
-  font-family: 'Gilroy';
+    font-family: 'Gilroy';
 }
 
 :root {
-  --color-primary: #003459;
-  --color-primary-dark: #002a48;
-  --color-primary-medium: #00528c;
-  --color-primary-light: #0078cd;
+    --color-primary: #003459;
+    --color-primary-dark: #002a48;
+    --color-primary-medium: #00528c;
+    --color-primary-light: #0078cd;
 
-  --color-secondary: #f7dba7;
-  --color-secondary-dark: #eec77e;
-  --color-secondary-medium: #f1d092;
-  --color-secondary-light: #fceed5;
+    --color-secondary: #f7dba7;
+    --color-secondary-dark: #eec77e;
+    --color-secondary-medium: #f1d092;
+    --color-secondary-light: #fceed5;
 
-  --color-state-red: #ff564f;
-  --color-state-green: #34c759;
-  --color-state-orange: #ff912c;
-  --color-state-blue: #00a7e7;
+    --color-state-red: #ff564f;
+    --color-state-green: #34c759;
+    --color-state-orange: #ff912c;
+    --color-state-blue: #00a7e7;
 
-  --color-neutral-100: #00171f;
-  --color-neutral-80: #242b33;
-  --color-neutral-60: #667479;
-  --color-neutral-40: #99a2a5;
-  --color-neutral-20: #ccd1d2;
-  --color-neutral-10: #ebeeef;
-  --color-neutral-0: #fdfdfd;
+    --color-neutral-100: #00171f;
+    --color-neutral-80: #242b33;
+    --color-neutral-60: #667479;
+    --color-neutral-40: #99a2a5;
+    --color-neutral-20: #ccd1d2;
+    --color-neutral-10: #ebeeef;
+    --color-neutral-0: #fdfdfd;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+button {
+    padding: 0;
+    margin: 0;
 }
