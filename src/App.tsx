@@ -1,4 +1,5 @@
 import { Button } from './components/Button'
+import { Header } from './components/Header'
 import { Typography } from './shared/components/Typography'
 import { VectorIcon } from './shared/icons/VectorIcon'
 
@@ -6,6 +7,7 @@ function App() {
     return (
         <>
             <main>
+                <Header />
                 <Typography variant="heading4" weight="medium">
                     Hello world!
                 </Typography>

@@ -35,7 +35,7 @@
     min-width: 163px;
 }
 
-.button[data-iconOnly='true'] {
+.button[data-icononly='true'] {
     padding: 10px;
 }
 

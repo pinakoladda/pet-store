@@ -29,7 +29,7 @@ export const Button = ({
             {...props}
             disabled={disabled}
             data-icon={Boolean(iconAfter || iconBefore)}
-            data-iconOnly={!children}
+            data-icononly={!children}
         >
             {iconBefore}
             {children && (
