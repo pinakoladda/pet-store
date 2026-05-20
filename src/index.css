@@ -33,6 +33,8 @@
 
 body {
     font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
 }
 
 :root {

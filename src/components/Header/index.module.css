@@ -6,9 +6,16 @@
     justify-content: center;
 }
 
+.imgRectangleYellowMediumTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .linksContainer {
     display: flex;
     gap: 48px;
+    z-index: 2;
     align-items: center;
 }
 

@@ -3,6 +3,7 @@ import styles from './index.module.css'
 import type React from 'react'
 import type { ReactNode } from 'react'
 import { Typography } from '../../shared/components/Typography'
+import cn from 'classnames'
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     variant?: 'default' | 'outline'
@@ -10,9 +11,11 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     iconAfter?: ReactNode
     size: 'M' | 'L'
     disabled?: true
+    className?: string
 }
 
 export const Button = ({
+    className,
     children,
     variant,
     iconBefore,
@@ -23,7 +26,7 @@ export const Button = ({
 }: ButtonProps) => {
     return (
         <button
-            className={styles.button}
+            className={cn(className, styles.button)}
             data-variant={variant}
             data-size={size}
             {...props}

@@ -4,6 +4,8 @@ import { LogoIcon } from '../../shared/icons/LogoIcon'
 import { Button } from '../Button'
 import { CurrencySelect } from './components/CurrencySelect'
 import { Search } from './components/Search'
+import rectangleYellowMediumTop from './assets/rectangleYellowMediumTop.png'
+
 import styles from './index.module.css'
 
 const LINKS = ['Home', 'Category', 'About', 'Contact']
@@ -11,6 +13,11 @@ const LINKS = ['Home', 'Category', 'About', 'Contact']
 export const Header = () => {
     return (
         <header className={styles.header}>
+            <img
+                className={styles.imgRectangleYellowMediumTop}
+                src={rectangleYellowMediumTop}
+                alt="rectangle yellow medium"
+            />
             <section className={styles.linksContainer}>
                 <LogoIcon />
                 {LINKS.map((link) => {

@@ -14,7 +14,7 @@ interface TypographyProps {
         | 'body4' // 12px
         | 'body5' // 10px
         | 'body6' // 8px
-    weight: 'regular' | 'medium' | 'semi-bold' | 'bold'
+    weight: 'regular' | 'medium' | 'semi-bold' | 'bold' //400 //500 //600 //700
 }
 
 export const Typography = ({ children, variant, weight }: TypographyProps) => {
