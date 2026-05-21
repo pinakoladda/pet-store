@@ -4,6 +4,7 @@ import { SloganBanner } from './components/SloganBanner'
 import { DOGS_FOR_SALE } from '../../shared/data/Dogs/dogs'
 
 import styles from './index.module.css'
+import { BannerBlue } from './components/BannerBlue'
 
 export const MainPage = () => {
     return (
@@ -12,7 +13,10 @@ export const MainPage = () => {
                 <Header />
                 <SloganBanner />
             </div>
-            <CardsContainer products={DOGS_FOR_SALE} />
+            <div className={styles.container}>
+                <CardsContainer products={DOGS_FOR_SALE} />
+                <BannerBlue />
+            </div>
         </main>
     )
 }

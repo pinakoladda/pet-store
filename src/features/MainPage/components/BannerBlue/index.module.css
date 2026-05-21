@@ -1,0 +1,63 @@
+.bannerBlue {
+    padding: 64px 64px 56px;
+    position: relative;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: end;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sloganContainer {
+    max-width: 394px;
+    text-align: right;
+    z-index: 2;
+}
+
+.title {
+    margin: 0 0 4px 0;
+    font-family: 'Gilroy';
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    position: relative;
+}
+
+.subtitle {
+    color: var(--color-primary-dark);
+    margin: 0 0 8px 0;
+}
+
+.paragraph {
+    color: var(--color-neutral-80);
+    margin: 0;
+}
+
+.btnContainer {
+    display: flex;
+    margin: 24px 0 0 0;
+    justify-content: end;
+}
+
+.buttonOutline {
+    margin-right: 20px;
+}
+
+.imgYellowRectange {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.imgRectangleBlue {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.imgMain {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    z-index: 3;
+}
