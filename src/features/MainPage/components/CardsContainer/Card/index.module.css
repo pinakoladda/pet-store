@@ -1,0 +1,38 @@
+.card {
+    max-width: 280px;
+    width: 100%;
+    background-color: #ffff;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 8px 8px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.image {
+    border-radius: 12px;
+}
+
+.paragraphInfo {
+    color: var(--color-neutral-60);
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 8px 0;
+}
+
+.infoParagraphContainer {
+    display: flex;
+    gap: 6px;
+}
+
+.dot {
+    position: relative;
+    top: -3px;
+    width: 18px;
+    text-align: center;
+}

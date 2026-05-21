@@ -20,3 +20,10 @@
     font-weight: 500;
     min-width: 200px;
 }
+
+@media screen and (max-width: 1300px) {
+    .searchInput {
+        min-width: none;
+        padding: 14px 16px 14px 52px;
+    }
+}

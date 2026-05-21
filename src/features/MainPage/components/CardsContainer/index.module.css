@@ -1,0 +1,29 @@
+.cardsContainer {
+    padding: 60px 130px;
+    background-color: var(--color-neutral-0);
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.subtitle {
+    color: var(--color-neutral-100);
+}
+
+.title {
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
