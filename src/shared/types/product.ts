@@ -7,4 +7,5 @@ export interface Product {
     image: string
     gift?: string
     info: InfoData
+    id: string
 }

@@ -17,18 +17,22 @@ export const SloganBanner = () => {
                     alt="rectangle yellow medium"
                 />
                 <h1 className={styles.title}>One more friend</h1>
-                <h2 className={styles.subtitle}>
-                    <Typography variant="heading1" weight="bold">
-                        Thousands more fun!
-                    </Typography>
-                </h2>
-                <p className={styles.paragraph}>
-                    <Typography variant="body2" weight="medium">
-                        Having a pet means you have more joy, a new friend, a
-                        happy person who will always be with you to have fun. We
-                        have 200+ different pets that can meet your needs!
-                    </Typography>
-                </p>
+                <Typography
+                    className={styles.subtitle}
+                    variant="heading1"
+                    weight="bold"
+                >
+                    Thousands more fun!
+                </Typography>
+                <Typography
+                    className={styles.paragraph}
+                    variant="body2"
+                    weight="medium"
+                >
+                    Having a pet means you have more joy, a new friend, a happy
+                    person who will always be with you to have fun. We have 200+
+                    different pets that can meet your needs!
+                </Typography>
                 <section className={styles.btnContainer}>
                     <Button
                         className={styles.buttonOutline}

@@ -6,6 +6,7 @@ import { PET_PRODUCTS } from '../../shared/data/products/products'
 import { BlueBanner } from './components/BlueBanner'
 import styles from './index.module.css'
 import { PetSellers } from './components/PetSellers'
+import { AdoptionBanner } from './components/AdoptionBanner'
 
 export const MainPage = () => {
     return (
@@ -27,6 +28,7 @@ export const MainPage = () => {
                     products={PET_PRODUCTS}
                 />
                 <PetSellers />
+                <AdoptionBanner />
             </div>
         </main>
     )

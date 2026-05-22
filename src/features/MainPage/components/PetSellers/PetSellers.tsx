@@ -16,16 +16,22 @@ export const PetSellers = () => {
         <main className={styles.petSellers}>
             <header className={styles.headerContainer}>
                 <div className={styles.textContainer}>
-                    <span className={styles.subtitle}>
-                        <Typography variant="body2" weight="medium">
-                            Proud to be part of
-                        </Typography>
-                    </span>
-                    <span className={styles.title}>
-                        <Typography as="span" variant="heading4" weight="bold">
-                            Pet Sellers
-                        </Typography>
-                    </span>
+                    <Typography
+                        className={styles.subtitle}
+                        as="span"
+                        variant="body2"
+                        weight="medium"
+                    >
+                        Proud to be part of
+                    </Typography>
+                    <Typography
+                        className={styles.title}
+                        as="span"
+                        variant="heading4"
+                        weight="bold"
+                    >
+                        Pet Sellers
+                    </Typography>
                 </div>
                 <Button size="M" variant="outline" iconAfter={<ArrowIcon />}>
                     View all our sellers

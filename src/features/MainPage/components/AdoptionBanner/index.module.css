@@ -1,0 +1,40 @@
+.adoptionBanner {
+    padding: 64px 64px 56px;
+    position: relative;
+    background-color: #ffb775;
+    /* display: flex; */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sloganContainer {
+    /* max-width: 394px; */
+    z-index: 2;
+}
+
+.title {
+    margin: 0 0 4px 0;
+    font-family: 'Gilroy';
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--color-primary-dark);
+    position: relative;
+}
+
+.subtitle {
+    color: var(--color-primary-dark);
+    margin: 0 0 8px 0;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    max-width: 394px;
+    color: var(--color-neutral-80);
+    margin: 0;
+}
+
+.btnContainer {
+    display: flex;
+    margin: 42px 0 0 0;
+    gap: 20px;
+}

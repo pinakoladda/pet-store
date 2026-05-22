@@ -20,16 +20,20 @@ export const CardsContainer = ({
         <main className={styles.cardsContainer}>
             <header className={styles.headerContainer}>
                 <div className={styles.container}>
-                    <p className={styles.subtitle}>
-                        <Typography variant="body2" weight="medium">
-                            {subtitle}
-                        </Typography>
-                    </p>
-                    <h4 className={styles.title}>
-                        <Typography variant="heading4" weight="bold">
-                            {title}
-                        </Typography>
-                    </h4>
+                    <Typography
+                        className={styles.subtitle}
+                        variant="body2"
+                        weight="medium"
+                    >
+                        {subtitle}
+                    </Typography>
+                    <Typography
+                        className={styles.title}
+                        variant="heading4"
+                        weight="bold"
+                    >
+                        {title}
+                    </Typography>
                 </div>
                 <div className={styles.container}>
                     <Button
@@ -43,7 +47,7 @@ export const CardsContainer = ({
             </header>
             <section className={styles.cards}>
                 {products.map((product) => {
-                    return <Card {...product} />
+                    return <Card key={product.id} {...product} />
                 })}
             </section>
         </main>

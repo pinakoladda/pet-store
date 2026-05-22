@@ -1,44 +1,32 @@
 import { Button } from '../../../../components/Button'
 import { Typography } from '../../../../shared/components/Typography'
 import { PlayIcon } from '../../../../shared/icons/PlayIcon'
-import rectangleYellow from './assets/rectangleYellow.png'
-import rectangleBlue from './assets/rectangleBlue.png'
-import womanWithDog from './assets/womanWithDog.png'
-
 import styles from './index.module.css'
 
-export const BlueBanner = () => {
+export const AdoptionBanner = () => {
     return (
-        <main className={styles.blueBanner}>
-            <img
-                className={styles.imgMain}
-                src={womanWithDog}
-                alt="woman with dog"
-            />
-            <img
-                className={styles.imgRectangleBlue}
-                src={rectangleBlue}
-                alt="rectangle blue"
-            />
+        <main className={styles.adoptionBanner}>
             <section className={styles.sloganContainer}>
-                <h1 className={styles.title}>One more friend</h1>
+                <h1 className={styles.title}>Adoption</h1>
                 <Typography
                     className={styles.subtitle}
                     variant="heading2"
                     weight="bold"
                 >
-                    Thousands more fun!
+                    We need help. so do they.
                 </Typography>
                 <Typography
                     className={styles.paragraph}
                     variant="body4"
                     weight="medium"
                 >
-                    Having a pet means you have more joy, a new friend, a happy
-                    person who will always be with you to have fun. We have 200+
-                    different pets that can meet your needs!
+                    Adopt a pet and give it a home, <br></br>it will be love you
+                    back unconditionally.
                 </Typography>
                 <section className={styles.btnContainer}>
+                    <Button size="L" variant="default">
+                        Explore Now
+                    </Button>
                     <Button
                         className={styles.buttonOutline}
                         size="L"
@@ -47,16 +35,13 @@ export const BlueBanner = () => {
                     >
                         View Intro
                     </Button>
-                    <Button size="L" variant="default">
-                        Explore Now
-                    </Button>
                 </section>
             </section>
-            <img
+            {/* <img
                 className={styles.imgYellowRectange}
                 src={rectangleYellow}
                 alt="rectangle yellow"
-            />
+            /> */}
         </main>
     )
 }

@@ -10,6 +10,7 @@ import img8 from './images/img8.jpg'
 
 export const PET_PRODUCTS: Product[] = [
     {
+        id: '1',
         name: 'Reflex Plus Adult Cat Food Salmon',
         info: { product: 'Dog Food', size: '385gm' },
         price: '140.000 VND',
@@ -17,6 +18,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Toy & Free Shaker',
     },
     {
+        id: '2',
         name: 'Reflex Plus Adult Cat Food Salmon',
         info: { product: 'Cat Food', size: '1.5kg' },
         price: '165.000 VND',
@@ -24,6 +26,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Toy & Free Shaker',
     },
     {
+        id: '3',
         name: 'Cat scratching ball toy kitten sisal rope ball',
         info: { product: 'Toy' },
         price: '1.100.000 VND',
@@ -31,6 +34,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Cat Food',
     },
     {
+        id: '4',
         name: 'Cute Pet Cat Warm Nest',
         info: { product: 'Toy' },
         price: '410.000 VND',
@@ -38,6 +42,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Cat Food',
     },
     {
+        id: '5',
         name: 'NaturVet Dogs - Omega-Gold Plus Salmon Oil',
         info: { product: 'Dog Food', size: '385gm' },
         price: '350.000 VND',
@@ -45,6 +50,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Toy & Free Shaker',
     },
     {
+        id: '6',
         name: 'Reflex Plus Adult Cat Food Salmon',
         info: { product: 'Cat Food', size: '1.5kg' },
         price: '165.000 VND',
@@ -52,6 +58,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Toy & Free Shaker',
     },
     {
+        id: '7',
         name: 'Costumes Fashion Pet Clother Cowboy Rider',
         info: { product: 'Costume' },
         price: '500.000 VND',
@@ -59,6 +66,7 @@ export const PET_PRODUCTS: Product[] = [
         gift: 'Free Cat Food',
     },
     {
+        id: '8',
         name: 'Costumes Chicken Drumsti ck Headband',
         info: { product: 'Costume' },
         price: '400.000 VND',
