@@ -33,9 +33,7 @@ export const Header = () => {
             <section className={styles.searchContainer}>
                 <Search />
                 <Button variant="default" size="L">
-                    <Typography variant="body2" weight="bold">
-                        Join the community
-                    </Typography>
+                    Join the community
                 </Button>
                 <div className={styles.selectContainer}>
                     <CurrencyVNDIcon />

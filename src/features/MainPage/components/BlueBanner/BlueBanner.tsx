@@ -7,9 +7,9 @@ import womanWithDog from './assets/womanWithDog.png'
 
 import styles from './index.module.css'
 
-export const BannerBlue = () => {
+export const BlueBanner = () => {
     return (
-        <main className={styles.bannerBlue}>
+        <main className={styles.blueBanner}>
             <img
                 className={styles.imgMain}
                 src={womanWithDog}
