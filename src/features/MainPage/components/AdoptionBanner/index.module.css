@@ -8,8 +8,14 @@
 }
 
 .sloganContainer {
-    /* max-width: 394px; */
-    z-index: 2;
+    position: relative;
+    z-index: 4;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
 }
 
 .title {
@@ -37,4 +43,23 @@
     display: flex;
     margin: 42px 0 0 0;
     gap: 20px;
+}
+
+.imgYellowRectange {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.imgOrangeRectange {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.imgMain {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
 }
