@@ -1,11 +1,12 @@
 import { Header } from '../../components/Header'
 import { CardsContainer } from './components/CardsContainer'
 import { SloganBanner } from './components/SloganBanner'
-import { DOGS_FOR_SALE } from '../../shared/data/Dogs/dogs'
+import { DOGS_FOR_SALE } from '../../shared/data/dogs/dogs'
 import { BannerBlue } from './components/BannerBlue'
-import { PET_PRODUCTS } from '../../shared/data/Products/products'
+import { PET_PRODUCTS } from '../../shared/data/products/products'
 
 import styles from './index.module.css'
+import { PetSellers } from './components/PetSellers'
 
 export const MainPage = () => {
     return (
@@ -26,6 +27,7 @@ export const MainPage = () => {
                     subtitle="Hard to choose right products for your pets?"
                     products={PET_PRODUCTS}
                 />
+                <PetSellers />
             </div>
         </main>
     )

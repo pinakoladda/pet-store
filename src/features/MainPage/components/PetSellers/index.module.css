@@ -1,0 +1,31 @@
+.petSellers {
+    margin: 40px 0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.textContainer {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.subtitle {
+    color: var(--color-neutral-100);
+}
+
+.title {
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
+
+.logosBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
