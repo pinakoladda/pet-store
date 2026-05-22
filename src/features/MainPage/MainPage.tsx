@@ -2,9 +2,10 @@ import { Header } from '../../components/Header'
 import { CardsContainer } from './components/CardsContainer'
 import { SloganBanner } from './components/SloganBanner'
 import { DOGS_FOR_SALE } from '../../shared/data/Dogs/dogs'
+import { BannerBlue } from './components/BannerBlue'
+import { PET_PRODUCTS } from '../../shared/data/Products/products'
 
 import styles from './index.module.css'
-import { BannerBlue } from './components/BannerBlue'
 
 export const MainPage = () => {
     return (
@@ -14,8 +15,17 @@ export const MainPage = () => {
                 <SloganBanner />
             </div>
             <div className={styles.container}>
-                <CardsContainer products={DOGS_FOR_SALE} />
+                <CardsContainer
+                    title="Take a look at some of our pets"
+                    subtitle="Whats new?"
+                    products={DOGS_FOR_SALE}
+                />
                 <BannerBlue />
+                <CardsContainer
+                    title="Our Products"
+                    subtitle="Hard to choose right products for your pets?"
+                    products={PET_PRODUCTS}
+                />
             </div>
         </main>
     )

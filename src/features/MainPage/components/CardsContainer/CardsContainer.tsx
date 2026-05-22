@@ -1,32 +1,33 @@
 import { Button } from '../../../../components/Button'
 import { Typography } from '../../../../shared/components/Typography'
 import { ArrowIcon } from '../../../../shared/icons/ArrowIcon'
+import type { Product } from '../../../../shared/types/product'
 import { Card } from './Card/Card'
 import styles from './index.module.css'
 
 interface CardsContainerProps {
-    products: {
-        name: string
-        gene: string
-        age: string
-        price: string
-        image: string
-    }[]
+    products: Product[]
+    title: string
+    subtitle: string
 }
 
-export const CardsContainer = ({ products }: CardsContainerProps) => {
+export const CardsContainer = ({
+    products,
+    title,
+    subtitle,
+}: CardsContainerProps) => {
     return (
         <main className={styles.cardsContainer}>
             <header className={styles.headerContainer}>
                 <div className={styles.container}>
                     <p className={styles.subtitle}>
                         <Typography variant="body2" weight="medium">
-                            Whats new?
+                            {subtitle}
                         </Typography>
                     </p>
                     <h4 className={styles.title}>
                         <Typography variant="heading4" weight="bold">
-                            Take a look at some of our pets
+                            {title}
                         </Typography>
                     </h4>
                 </div>
@@ -42,15 +43,7 @@ export const CardsContainer = ({ products }: CardsContainerProps) => {
             </header>
             <section className={styles.cards}>
                 {products.map((product) => {
-                    return (
-                        <Card
-                            name={product.name}
-                            gene={product.gene}
-                            age={product.age}
-                            price={product.price}
-                            image={product.image}
-                        />
-                    )
+                    return <Card {...product} />
                 })}
             </section>
         </main>

@@ -1,18 +1,22 @@
-import cn from 'classnames'
 import { Typography } from '../../../../../shared/components/Typography'
 import styles from './index.module.css'
+import { GiftIcon } from '../../../../../shared/icons/GiftIcon'
+import { DotIcon } from '../../../../../shared/icons/DotIcon'
+import type { InfoFields, Product } from '../../../../../shared/types/product'
 
-interface CardProps {
-    name: string
-    gene?: string
-    age?: string
-    price: string
-    image: string
-    product?: string
-    size?: string
+const LABEL_MAP: Record<InfoFields, string> = {
+    gene: 'Gene:',
+    age: 'Age:',
+    size: 'Size:',
+    product: 'Product:',
 }
 
-export const Card = ({ name, gene, age, price, image }: CardProps) => {
+export const Card = ({ name, price, image, gift, info }: Product) => {
+    const lables = Object.entries(info).map(([key, value]) => {
+        const label = LABEL_MAP[key as InfoFields]
+        return { label, value }
+    })
+
     return (
         <main className={styles.card}>
             <img className={styles.image} src={image} />
@@ -23,37 +27,46 @@ export const Card = ({ name, gene, age, price, image }: CardProps) => {
                     </Typography>
                 </h4>
                 <div className={styles.infoParagraphContainer}>
-                    <p className={styles.paragraphInfo}>
-                        <Typography variant="body3" weight="medium">
-                            Gene:
-                        </Typography>
-                    </p>
-                    <p className={styles.paragraphInfo}>
-                        <Typography variant="body3" weight="bold">
-                            {gene}
-                        </Typography>
-                    </p>
-                    <span className={cn(styles.paragraphInfo, styles.dot)}>
-                        <Typography variant="body3" weight="bold">
-                            .
-                        </Typography>
-                    </span>
-                    <p className={styles.paragraphInfo}>
-                        <Typography variant="body3" weight="medium">
-                            Age:
-                        </Typography>
-                    </p>
-                    <p className={styles.paragraphInfo}>
-                        <Typography variant="body3" weight="bold">
-                            {age}
-                        </Typography>
-                    </p>
+                    {lables.map(({ label, value }, index) => {
+                        return (
+                            <>
+                                <p className={styles.paragraphInfo}>
+                                    <Typography variant="body3" weight="medium">
+                                        {label}{' '}
+                                        <Typography
+                                            variant="body3"
+                                            weight="bold"
+                                            as="span"
+                                        >
+                                            {value}
+                                        </Typography>
+                                    </Typography>
+                                </p>
+                                {index !== lables.length - 1 && (
+                                    <Typography variant="body3" weight="bold">
+                                        ·
+                                    </Typography>
+                                )}
+                            </>
+                        )
+                    })}
                 </div>
                 <p className={styles.paragraphPrice}>
                     <Typography variant="body2" weight="bold">
                         {price}
                     </Typography>
                 </p>
+                {gift && (
+                    <div className={styles.giftContainer}>
+                        <GiftIcon />
+                        <DotIcon />
+                        <p className={styles.paragraphPrice}>
+                            <Typography variant="body3" weight="bold">
+                                {gift}
+                            </Typography>
+                        </p>
+                    </div>
+                )}
             </div>
         </main>
     )

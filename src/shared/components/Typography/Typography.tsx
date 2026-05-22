@@ -1,5 +1,6 @@
 import type React from 'react'
 import styles from './index.module.css'
+import type { JSX } from 'react'
 
 interface TypographyProps {
     children: React.ReactNode
@@ -15,16 +16,22 @@ interface TypographyProps {
         | 'body5' // 10px
         | 'body6' // 8px
     weight: 'regular' | 'medium' | 'semi-bold' | 'bold' //400 //500 //600 //700
+    as?: keyof JSX.IntrinsicElements
 }
 
-export const Typography = ({ children, variant, weight }: TypographyProps) => {
+export const Typography = ({
+    children,
+    variant,
+    weight,
+    as: Component = 'p',
+}: TypographyProps) => {
     return (
-        <div
+        <Component
             className={styles.main}
             data-variant={variant}
             data-weight={weight}
         >
             {children}
-        </div>
+        </Component>
     )
 }
