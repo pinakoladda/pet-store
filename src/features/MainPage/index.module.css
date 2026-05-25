@@ -8,6 +8,13 @@
     padding: 0 130px;
 }
 
+.bannerContainer[data-variant='header'] {
+    border-radius: 0 0 40px 40px;
+}
+.bannerContainer[data-variant='footer'] {
+    border-radius: 40px 40px 0 0;
+}
+
 .container {
     padding: 0 130px;
 }

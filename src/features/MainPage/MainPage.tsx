@@ -13,7 +13,7 @@ import { Footer } from '../../components/Footer'
 export const MainPage = () => {
     return (
         <main className={styles.main}>
-            <div className={styles.bannerContainer}>
+            <div className={styles.bannerContainer} data-variant="header">
                 <Header />
                 <SloganBanner />
             </div>
@@ -32,6 +32,8 @@ export const MainPage = () => {
                 <PetSellers />
                 <AdoptionBanner />
                 <ListOfFields />
+            </div>
+            <div className={styles.bannerContainer} data-variant="footer">
                 <Footer />
             </div>
         </main>
