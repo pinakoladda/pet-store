@@ -1,3 +1,35 @@
 .footer {
     padding: 80px 0 40px;
 }
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccd1d2;
+}
+
+.linksContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.iconsContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.paragraph {
+    color: var(--color-neutral-100);
+}
+
+.sectionTerms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.termsContainer {
+    display: flex;
+    gap: 40px;
+}
