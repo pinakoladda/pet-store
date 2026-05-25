@@ -8,6 +8,7 @@ import styles from './index.module.css'
 import { PetSellers } from './components/PetSellers'
 import { AdoptionBanner } from './components/AdoptionBanner'
 import { ListOfFields } from './components/ListOfFields'
+import { Footer } from '../../components/Footer'
 
 export const MainPage = () => {
     return (
@@ -31,6 +32,7 @@ export const MainPage = () => {
                 <PetSellers />
                 <AdoptionBanner />
                 <ListOfFields />
+                <Footer />
             </div>
         </main>
     )
