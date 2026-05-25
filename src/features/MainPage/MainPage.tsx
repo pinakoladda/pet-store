@@ -7,6 +7,7 @@ import { BlueBanner } from './components/BlueBanner'
 import styles from './index.module.css'
 import { PetSellers } from './components/PetSellers'
 import { AdoptionBanner } from './components/AdoptionBanner'
+import { ListOfFields } from './components/ListOfFields'
 
 export const MainPage = () => {
     return (
@@ -29,6 +30,7 @@ export const MainPage = () => {
                 />
                 <PetSellers />
                 <AdoptionBanner />
+                <ListOfFields />
             </div>
         </main>
     )

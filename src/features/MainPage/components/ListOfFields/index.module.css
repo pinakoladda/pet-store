@@ -1,0 +1,26 @@
+.listOfFields {
+    margin: 60px 0;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.subtitle {
+    color: var(--color-neutral-100);
+}
+
+.title {
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
+
+.fields {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
