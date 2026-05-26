@@ -39,6 +39,7 @@ export const ListOfFields = () => {
                 {FIELDS.map((field) => {
                     return (
                         <FieldCard
+                            key={field.id}
                             image={field.image}
                             title={field.title}
                             text={field.text}

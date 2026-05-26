@@ -34,3 +34,13 @@
     align-items: center;
     gap: 6px;
 }
+
+.iconContainer {
+    z-index: 4;
+}
+
+@media screen and (max-width: 1350px) {
+    .header {
+        justify-content: space-between;
+    }
+}

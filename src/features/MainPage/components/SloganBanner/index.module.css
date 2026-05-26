@@ -1,5 +1,4 @@
 .sloganBanner {
-    display: flex;
     margin-top: 80px;
     padding-bottom: 205px;
     position: relative;
@@ -53,8 +52,19 @@
     position: absolute;
     left: -12px;
 }
-/* 
-@media screen and (max-width: 1300px) {
-    .imgMain {
+
+@media screen and (max-width: 1350px) {
+    .sloganBanner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
-} */
+    .imgMain {
+        position: static;
+    }
+
+    .btnContainer {
+        justify-content: space-around;
+    }
+}
