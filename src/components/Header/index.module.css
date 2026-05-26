@@ -37,10 +37,14 @@
 
 .iconContainer {
     z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 @media screen and (max-width: 1350px) {
     .header {
-        justify-content: space-between;
+        padding: 0;
     }
 }

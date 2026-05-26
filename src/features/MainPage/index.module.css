@@ -18,3 +18,12 @@
 .container {
     padding: 0 130px;
 }
+
+@media screen and (max-width: 1350px) {
+    .bannerContainer {
+        padding: 20px 16px 0;
+    }
+    .container {
+        padding: 0 16px;
+    }
+}

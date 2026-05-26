@@ -27,9 +27,9 @@ export const Header = () => {
                 />
                 <div className={styles.iconContainer}>
                     <MenuIcon />
+                    <LogoIcon />
+                    <SearchIcon />
                 </div>
-                <LogoIcon />
-                <SearchIcon />
             </header>
         )
     }

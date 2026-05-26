@@ -4,6 +4,7 @@ import { GiftIcon } from '../../../../../shared/icons/GiftIcon'
 import { DotIcon } from '../../../../../shared/icons/DotIcon'
 import type { InfoFields, Product } from '../../../../../shared/types/product'
 import React from 'react'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 const LABEL_MAP: Record<InfoFields, string> = {
     gene: 'Gene:',
@@ -13,6 +14,8 @@ const LABEL_MAP: Record<InfoFields, string> = {
 }
 
 export const Card = ({ name, price, image, gift, info }: Product) => {
+    const isSmallDevice = useMediaQuery('only screen and (max-width : 1350px)')
+
     const lables = Object.entries(info).map(([key, value]) => {
         const label = LABEL_MAP[key as InfoFields]
         return { label, value }
@@ -24,7 +27,7 @@ export const Card = ({ name, price, image, gift, info }: Product) => {
             <div className={styles.infoContainer}>
                 <Typography
                     className={styles.productTitle}
-                    variant="body2"
+                    variant={isSmallDevice ? 'body3' : 'body2'}
                     weight="bold"
                 >
                     {name}
@@ -35,30 +38,37 @@ export const Card = ({ name, price, image, gift, info }: Product) => {
                             <React.Fragment key={label}>
                                 <Typography
                                     className={styles.paragraphInfo}
-                                    variant="body3"
+                                    variant={isSmallDevice ? 'body4' : 'body3'}
                                     weight="medium"
                                 >
                                     {label}{' '}
                                     <Typography
-                                        variant="body3"
+                                        variant={
+                                            isSmallDevice ? 'body4' : 'body3'
+                                        }
                                         weight="bold"
                                         as="span"
                                     >
                                         {value}
                                     </Typography>
                                 </Typography>
-                                {index !== lables.length - 1 && (
-                                    <Typography variant="body3" weight="bold">
-                                        ·
-                                    </Typography>
-                                )}
+
+                                {!isSmallDevice &&
+                                    index !== lables.length - 1 && (
+                                        <Typography
+                                            variant="body3"
+                                            weight="bold"
+                                        >
+                                            ·
+                                        </Typography>
+                                    )}
                             </React.Fragment>
                         )
                     })}
                 </div>
                 <Typography
                     className={styles.paragraphPrice}
-                    variant="body2"
+                    variant={isSmallDevice ? 'body2' : 'body3'}
                     weight="bold"
                 >
                     {price}

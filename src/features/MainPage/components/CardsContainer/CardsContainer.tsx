@@ -1,3 +1,4 @@
+import { useMediaQuery } from '@uidotdev/usehooks'
 import { Button } from '../../../../components/Button'
 import { Typography } from '../../../../shared/components/Typography'
 import { ArrowIcon } from '../../../../shared/icons/ArrowIcon'
@@ -16,20 +17,21 @@ export const CardsContainer = ({
     title,
     subtitle,
 }: CardsContainerProps) => {
+    const isSmallDevice = useMediaQuery('only screen and (max-width : 1350px)')
     return (
         <main className={styles.cardsContainer}>
             <header className={styles.headerContainer}>
                 <div className={styles.container}>
                     <Typography
                         className={styles.subtitle}
-                        variant="body2"
+                        variant={isSmallDevice ? 'body3' : 'body2'}
                         weight="medium"
                     >
                         {subtitle}
                     </Typography>
                     <Typography
                         className={styles.title}
-                        variant="heading4"
+                        variant={isSmallDevice ? 'body1' : 'heading4'}
                         weight="bold"
                     >
                         {title}
@@ -40,6 +42,7 @@ export const CardsContainer = ({
                         size="M"
                         variant="outline"
                         iconAfter={<ArrowIcon />}
+                        className={styles.btnLargeDevice}
                     >
                         View more
                     </Button>
@@ -50,6 +53,14 @@ export const CardsContainer = ({
                     return <Card key={product.id} {...product} />
                 })}
             </section>
+            <Button
+                size="M"
+                variant="outline"
+                iconAfter={<ArrowIcon />}
+                className={styles.btnSmallDevice}
+            >
+                View more
+            </Button>
         </main>
     )
 }

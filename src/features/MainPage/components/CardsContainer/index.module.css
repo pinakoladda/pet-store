@@ -27,3 +27,35 @@
     gap: 20px;
     justify-content: center;
 }
+
+.btnSmallDevice {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .cardsContainer {
+        padding: 40px 0;
+    }
+    .headerContainer {
+        margin-bottom: 20px;
+    }
+    .cards {
+        gap: 12px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btnLargeDevice {
+        display: none;
+    }
+
+    .btnSmallDevice {
+        display: flex;
+        margin: 0 auto;
+        max-width: 382px;
+        width: 100%;
+    }
+    .cards {
+        margin-bottom: 16px;
+    }
+}

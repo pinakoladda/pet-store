@@ -59,12 +59,25 @@
         flex-direction: column;
         align-items: center;
         padding: 0;
+        margin-top: 35px;
+        gap: 24px;
     }
     .imgMain {
         position: static;
     }
 
     .btnContainer {
-        justify-content: space-around;
+        margin-top: 32px;
+    }
+    .title {
+        margin: 0;
+        font-size: 46px;
+    }
+    .subtitle {
+        margin-bottom: 12px;
+        font-size: 28px;
+    }
+    .imgRectangleYellowSmall {
+        display: none;
     }
 }
