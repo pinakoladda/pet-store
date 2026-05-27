@@ -4,27 +4,59 @@ import { PlayIcon } from '../../../../shared/icons/PlayIcon'
 import rectangleYellow from './assets/rectangleYellow.png'
 import rectangleBlue from './assets/rectangleBlue.png'
 import womanWithDog from './assets/womanWithDog.png'
+import womanWithDogSmall from './assets/womanWithDogSmall.png'
+import rectangleYellowSmall from './assets/rectangleYellowSmall.png'
+import rectangleBlueSmall from './assets/rectangleBlueSmall.png'
 
 import styles from './index.module.css'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 export const BlueBanner = () => {
+    const isSmallDevice = useMediaQuery('only screen and (max-width : 600px)')
     return (
         <main className={styles.blueBanner}>
-            <img
-                className={styles.imgMain}
-                src={womanWithDog}
-                alt="woman with dog"
-            />
-            <img
-                className={styles.imgRectangleBlue}
-                src={rectangleBlue}
-                alt="rectangle blue"
-            />
+            {isSmallDevice ? (
+                <>
+                    <img
+                        className={styles.imgMainSmall}
+                        src={womanWithDogSmall}
+                        alt="woman with dog"
+                    />
+                    <img
+                        className={styles.imgRectangleBlueSmall}
+                        src={rectangleBlueSmall}
+                        alt="rectangle blue"
+                    />
+                    <img
+                        className={styles.imgYellowRectangeSmall}
+                        src={rectangleYellowSmall}
+                        alt="rectangle yellow"
+                    />
+                </>
+            ) : (
+                <>
+                    <img
+                        className={styles.imgMain}
+                        src={womanWithDog}
+                        alt="woman with dog"
+                    />
+                    <img
+                        className={styles.imgRectangleBlue}
+                        src={rectangleBlue}
+                        alt="rectangle blue"
+                    />
+                    <img
+                        className={styles.imgYellowRectange}
+                        src={rectangleYellow}
+                        alt="rectangle yellow"
+                    />
+                </>
+            )}
             <section className={styles.sloganContainer}>
                 <h1 className={styles.title}>One more friend</h1>
                 <Typography
                     className={styles.subtitle}
-                    variant="heading2"
+                    variant={isSmallDevice ? 'heading4' : 'heading2'}
                     weight="bold"
                 >
                     Thousands more fun!
@@ -52,11 +84,6 @@ export const BlueBanner = () => {
                     </Button>
                 </section>
             </section>
-            <img
-                className={styles.imgYellowRectange}
-                src={rectangleYellow}
-                alt="rectangle yellow"
-            />
         </main>
     )
 }

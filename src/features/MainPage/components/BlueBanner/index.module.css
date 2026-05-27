@@ -61,3 +61,46 @@
     left: 20px;
     z-index: 3;
 }
+
+.imgYellowRectangeSmall {
+    position: absolute;
+    top: 0;
+}
+
+.imgRectangleBlueSmall {
+    position: absolute;
+    bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .blueBanner {
+        padding: 24px 12px 0;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+    .sloganContainer {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .imgMain {
+        position: static;
+    }
+    .btnContainer {
+        margin: 32px 0 0 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 36px;
+        font-weight: 800;
+        margin: 0;
+    }
+    .subtitle {
+        margin-bottom: 12px;
+    }
+    .btnContainer {
+        margin-top: 32px;
+    }
+}
