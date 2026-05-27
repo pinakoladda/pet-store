@@ -42,9 +42,8 @@
 
 @media screen and (max-width: 900px) {
     .logosBar {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        justify-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
     }
 }
 

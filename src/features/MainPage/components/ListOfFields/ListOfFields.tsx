@@ -27,6 +27,7 @@ export const ListOfFields = () => {
                 </div>
                 <div className={styles.container}>
                     <Button
+                        className={styles.btnLargeDevice}
                         size="M"
                         variant="outline"
                         iconAfter={<ArrowIcon />}
@@ -47,6 +48,14 @@ export const ListOfFields = () => {
                     )
                 })}
             </section>
+            <Button
+                className={styles.btnSmallDevice}
+                size="M"
+                variant="outline"
+                iconAfter={<ArrowIcon />}
+            >
+                View more
+            </Button>
         </main>
     )
 }

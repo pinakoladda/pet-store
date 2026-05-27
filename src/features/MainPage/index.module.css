@@ -6,6 +6,8 @@
         #ffe7ba 104.24%
     );
     padding: 0 130px;
+    /* margin: 0 auto;
+    width: 100%; */
 }
 
 .bannerContainer[data-variant='header'] {
@@ -17,11 +19,12 @@
 
 .container {
     padding: 0 130px;
+    /* width: 100%; */
 }
 
 @media screen and (max-width: 1350px) {
     .bannerContainer {
-        padding: 20px 16px 0;
+        padding: 0 16px 0;
     }
     .container {
         padding: 0 16px;

@@ -35,3 +35,32 @@
 .btn {
     border-radius: 8px;
 }
+
+@media screen and (max-width: 900px) {
+    .emailForm {
+        flex-direction: column;
+    }
+    .title {
+        max-width: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .emailForm {
+        padding: 16px;
+        gap: 16px;
+    }
+    .inputSection {
+        flex-direction: column;
+    }
+    .input {
+        width: unset;
+        padding: 14px 28px;
+        color: var(--color-neutral-40);
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 8px;
+        border: 1px solid #99a2a5;
+        background-color: #fff;
+    }
+}

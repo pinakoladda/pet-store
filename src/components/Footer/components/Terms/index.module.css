@@ -1,0 +1,27 @@
+.sectionTerms {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.termsContainer {
+    display: flex;
+    gap: 40px;
+}
+
+.paragraph {
+    color: var(--color-neutral-60);
+}
+
+.sectionTermsSmall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.termsContainerSmall {
+    display: flex;
+    gap: 12px;
+    margin: 32px 0 8px;
+}

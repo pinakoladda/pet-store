@@ -24,3 +24,29 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.btnSmallDevice {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .listOfFields {
+        margin: 40px 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .btnLargeDevice {
+        display: none;
+    }
+
+    .btnSmallDevice {
+        display: flex;
+        margin: 0 auto;
+        max-width: 382px;
+        width: 100%;
+    }
+    .fields {
+        margin-bottom: 16px;
+    }
+}

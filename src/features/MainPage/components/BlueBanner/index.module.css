@@ -119,3 +119,17 @@
         margin-top: 32px;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .blueBanner {
+        background-color: var(--color-secondary);
+    }
+    .btnContainer {
+        margin-top: 32px;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .buttonOutline {
+        margin-right: 0;
+    }
+}

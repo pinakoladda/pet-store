@@ -10,6 +10,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    max-width: 100dvw;
 }
 
 .linksContainer {
@@ -41,10 +42,4 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-@media screen and (max-width: 1350px) {
-    .header {
-        padding: 0;
-    }
 }

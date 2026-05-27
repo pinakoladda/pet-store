@@ -1,10 +1,10 @@
 import { Typography } from '../../shared/components/Typography'
 import { FaceBookIcon } from '../../shared/icons/FaceBookIcon'
 import { InstagramIcon } from '../../shared/icons/InstagramIcon'
-import { LogoIcon } from '../../shared/icons/LogoIcon'
 import { TwitterIcon } from '../../shared/icons/TwitterIcon'
 import { YouTubeIcon } from '../../shared/icons/YouTubeIcon'
 import { EmailForm } from './components/EmailForm'
+import { Terms } from './components/Terms'
 import styles from './index.module.css'
 
 export const Footer = () => {
@@ -49,32 +49,7 @@ export const Footer = () => {
                     <YouTubeIcon />
                 </div>
             </section>
-            <section className={styles.sectionTerms}>
-                <Typography
-                    className={styles.paragraph}
-                    variant="body3"
-                    weight="medium"
-                >
-                    © 2022 Monito. All rights reserved.
-                </Typography>
-                <LogoIcon />
-                <div className={styles.termsContainer}>
-                    <Typography
-                        className={styles.paragraph}
-                        variant="body3"
-                        weight="medium"
-                    >
-                        Terms of Service
-                    </Typography>
-                    <Typography
-                        className={styles.paragraph}
-                        variant="body3"
-                        weight="medium"
-                    >
-                        Privacy Policy
-                    </Typography>
-                </div>
-            </section>
+            <Terms />
         </footer>
     )
 }

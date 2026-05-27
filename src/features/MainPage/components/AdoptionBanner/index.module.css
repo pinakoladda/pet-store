@@ -102,3 +102,11 @@
         max-width: unset;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .btnContainer {
+        margin-top: 32px;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
