@@ -1,5 +1,5 @@
 .petSellers {
-    margin: 40px 0;
+    margin: 40px 0 0;
 }
 
 .headerContainer {
@@ -28,4 +28,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.btnSmallDevice {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+    .headerContainer {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logosBar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logosBar {
+        margin-bottom: 16px;
+    }
+    .btnSmallDevice {
+        display: flex;
+        margin: 0 auto;
+        max-width: 382px;
+        width: 100%;
+    }
+    .btn {
+        display: none;
+    }
 }

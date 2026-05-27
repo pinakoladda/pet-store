@@ -33,7 +33,12 @@ export const PetSellers = () => {
                         Pet Sellers
                     </Typography>
                 </div>
-                <Button size="M" variant="outline" iconAfter={<ArrowIcon />}>
+                <Button
+                    className={styles.btn}
+                    size="M"
+                    variant="outline"
+                    iconAfter={<ArrowIcon />}
+                >
                     View all our sellers
                 </Button>
             </header>
@@ -46,6 +51,14 @@ export const PetSellers = () => {
                 <img src={butchersLogo} alt="sheba seller logo" />
                 <img src={pedigreeLogo} alt="sheba seller logo" />
             </section>
+            <Button
+                className={styles.btnSmallDevice}
+                size="M"
+                variant="outline"
+                iconAfter={<ArrowIcon />}
+            >
+                View all our sellers
+            </Button>
         </main>
     )
 }

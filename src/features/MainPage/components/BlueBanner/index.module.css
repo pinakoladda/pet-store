@@ -1,4 +1,5 @@
 .blueBanner {
+    margin: 60px 0 0;
     padding: 64px 64px 56px;
     position: relative;
     background-color: var(--color-primary);
@@ -65,11 +66,25 @@
 .imgYellowRectangeSmall {
     position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .imgRectangleBlueSmall {
     position: absolute;
     bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.imgMainSmall {
+    z-index: 4;
+}
+
+@media screen and (max-width: 1350px) {
+    .blueBanner {
+        margin: 40px 0 0;
+    }
 }
 
 @media screen and (max-width: 900px) {

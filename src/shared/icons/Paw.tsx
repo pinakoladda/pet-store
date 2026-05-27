@@ -1,8 +1,13 @@
-export const Paw = () => {
+interface PawIconProps {
+    width?: string
+    height?: string
+}
+
+export const Paw = ({ width, height }: PawIconProps) => {
     return (
         <svg
-            width="42"
-            height="38"
+            width={width ? width : '42'}
+            height={height ? height : '38'}
             viewBox="0 0 42 38"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

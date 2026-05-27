@@ -7,18 +7,21 @@ import handAndPawImage from './assets/handAndPaw.png'
 
 import styles from './index.module.css'
 import { Paw } from '../../../../shared/icons/Paw'
+import { useMediaQuery } from '@uidotdev/usehooks'
 
 export const AdoptionBanner = () => {
+    const isSmallDevice = useMediaQuery('only screen and (max-width : 970px)')
+
     return (
         <main className={styles.adoptionBanner}>
             <section className={styles.sloganContainer}>
                 <div className={styles.titleContainer}>
                     <h1 className={styles.title}>Adoption</h1>
-                    <Paw />
+                    {isSmallDevice ? <Paw width={'34'} height="30" /> : <Paw />}
                 </div>
                 <Typography
                     className={styles.subtitle}
-                    variant="heading2"
+                    variant={isSmallDevice ? 'heading4' : 'heading2'}
                     weight="bold"
                 >
                     We need help. so do they.

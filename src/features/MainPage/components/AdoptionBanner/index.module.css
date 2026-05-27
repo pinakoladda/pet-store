@@ -1,4 +1,5 @@
 .adoptionBanner {
+    margin-top: 60px;
     padding: 64px 64px 56px;
     position: relative;
     background-color: #ffb775;
@@ -62,4 +63,42 @@
     z-index: 3;
     top: 0;
     right: 0;
+}
+
+@media screen and (max-width: 1350px) {
+    .adoptionBanner {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .adoptionBanner {
+        padding: 24px;
+    }
+    .titleContainer {
+        justify-content: center;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+    .subtitle {
+        margin-bottom: 12px;
+    }
+    .sloganContainer {
+        text-align: center;
+    }
+    .imgMain {
+        display: none;
+    }
+    .imgYellowRectange {
+        display: none;
+    }
+    .btnContainer {
+        margin-top: 32px;
+        justify-content: center;
+    }
+    .paragraph {
+        max-width: unset;
+    }
 }

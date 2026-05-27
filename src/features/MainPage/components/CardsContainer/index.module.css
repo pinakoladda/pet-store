@@ -1,5 +1,5 @@
 .cardsContainer {
-    padding: 60px 0;
+    padding: 60px 0 0;
     background-color: var(--color-neutral-0);
     max-width: 1500px;
     margin: 0 auto;
@@ -34,7 +34,7 @@
 
 @media screen and (max-width: 1350px) {
     .cardsContainer {
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
     .headerContainer {
         margin-bottom: 20px;
