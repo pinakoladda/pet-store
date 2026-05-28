@@ -2,8 +2,15 @@
     padding: 0 130px;
 }
 
+.pathContainer {
+    margin-top: 7px;
+}
+
 @media screen and (max-width: 1350px) {
     .catgoryPage {
         padding: 0 16px;
+    }
+    .pathContainer {
+        margin-top: 12px;
     }
 }
