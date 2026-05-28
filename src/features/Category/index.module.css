@@ -1,0 +1,9 @@
+.catgoryPage {
+    padding: 0 130px;
+}
+
+@media screen and (max-width: 1350px) {
+    .catgoryPage {
+        padding: 0 16px;
+    }
+}

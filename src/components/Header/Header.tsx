@@ -4,7 +4,6 @@ import { LogoIcon } from '../../shared/icons/LogoIcon'
 import { Button } from '../Button'
 import { CurrencySelect } from './components/CurrencySelect'
 import { Search } from './components/Search'
-
 import { useMediaQuery } from '@uidotdev/usehooks'
 
 import styles from './index.module.css'
@@ -27,7 +26,6 @@ export const Header = () => {
             </header>
         )
     }
-
     return (
         <header className={styles.header}>
             <section className={styles.linksContainer}>

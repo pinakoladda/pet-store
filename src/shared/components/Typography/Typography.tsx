@@ -5,7 +5,7 @@ import styles from './index.module.css'
 
 interface TypographyProps {
     children: React.ReactNode
-    variant:
+    variant?:
         | 'heading1' // 46px
         | 'heading2' // 36px
         | 'heading3' // 28px

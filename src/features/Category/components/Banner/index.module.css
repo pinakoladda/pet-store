@@ -1,0 +1,142 @@
+.banner {
+    margin-top: 9px;
+    padding: 64px 85px 56px;
+    position: relative;
+    background: linear-gradient(
+        102.87deg,
+        #fceed5 6.43%,
+        #fceed5 78.33%,
+        #ffe7ba 104.24%
+    );
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    color: var(--color-neutral-0);
+    z-index: 4;
+    max-width: 403px;
+    text-align: right;
+}
+
+.title {
+    margin-bottom: 2px;
+    font-family: 'Gilroy';
+    font-size: 52px;
+    font-weight: 800;
+    position: relative;
+}
+
+.subtitle {
+    margin-bottom: 8px;
+    font-size: 36px;
+}
+
+.paragraph {
+    font-size: 12px;
+}
+
+.btnContainer {
+    display: flex;
+    margin: 24px 0 0 0;
+    gap: 20px;
+}
+
+.btnOutline {
+    /* margin-right: 20px; */
+    border: 1.5px solid var(--color-neutral-0);
+    border-color: var(--color-neutral-0);
+    color: var(--color-neutral-0);
+    background-color: unset;
+}
+
+.btnDefault {
+    background-color: var(--color-neutral-0);
+    color: var(--color-neutral-100);
+}
+
+.imgMain {
+    position: absolute;
+    bottom: 0;
+    left: 51px;
+    max-width: 100dvw;
+}
+
+.imgMainSmall {
+    display: none;
+}
+
+.imgRectangleBlueLarge {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.imgRectangleBlueSmall {
+    display: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .imgMain {
+        left: 0px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .banner {
+        margin-top: 14px;
+        padding: 32px 16px 0;
+        flex-direction: column;
+        overflow: hidden;
+        align-items: center;
+    }
+    .textContainer {
+        align-items: start;
+        text-align: left;
+    }
+    .title {
+        font-size: 42px;
+        color: var(--color-primary-dark);
+    }
+    .subtitle {
+        margin-bottom: 12px;
+        font-size: 26px;
+        color: var(--color-primary-dark);
+    }
+    .paragraph {
+        color: var(--color-primary-dark);
+    }
+
+    .btnContainer {
+        justify-content: space-around;
+    }
+    .imgMain {
+        display: none;
+    }
+    .imgMainSmall {
+        display: block;
+        max-width: 100dvw;
+        z-index: 3;
+    }
+    .imgRectangleBlueLarge {
+        display: none;
+    }
+    .imgRectangleBlueSmall {
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .btnContainer {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+}

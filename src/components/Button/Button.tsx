@@ -6,7 +6,7 @@ import { Typography } from '../../shared/components/Typography'
 import cn from 'classnames'
 
 interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
-    variant?: 'default' | 'outline'
+    variant?: 'default' | 'outline' | null
     iconBefore?: ReactNode
     iconAfter?: ReactNode
     size: 'M' | 'L'

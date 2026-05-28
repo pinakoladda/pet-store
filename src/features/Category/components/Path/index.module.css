@@ -1,0 +1,6 @@
+.pathContainer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: var(--color-neutral-60);
+}
