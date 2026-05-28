@@ -30,3 +30,10 @@
         padding: 0 16px;
     }
 }
+
+.imgRectangleYellowMediumTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100dvw;
+}

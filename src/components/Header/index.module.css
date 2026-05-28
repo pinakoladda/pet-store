@@ -6,13 +6,6 @@
     justify-content: center;
 }
 
-.imgRectangleYellowMediumTop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100dvw;
-}
-
 .linksContainer {
     display: flex;
     gap: 48px;

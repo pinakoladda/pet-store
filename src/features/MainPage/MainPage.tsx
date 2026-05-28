@@ -9,11 +9,17 @@ import { PetSellers } from './components/PetSellers'
 import { AdoptionBanner } from './components/AdoptionBanner'
 import { ListOfFields } from './components/ListOfFields'
 import { Footer } from '../../components/Footer'
+import rectangleYellowMediumTop from './assets/rectangleYellowMediumTop.png'
 
 export const MainPage = () => {
     return (
         <main className={styles.main}>
             <div className={styles.bannerContainer} data-variant="header">
+                <img
+                    className={styles.imgRectangleYellowMediumTop}
+                    src={rectangleYellowMediumTop}
+                    alt="rectangle yellow medium"
+                />
                 <Header />
                 <SloganBanner />
             </div>

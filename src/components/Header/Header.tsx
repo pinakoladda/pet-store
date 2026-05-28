@@ -4,7 +4,6 @@ import { LogoIcon } from '../../shared/icons/LogoIcon'
 import { Button } from '../Button'
 import { CurrencySelect } from './components/CurrencySelect'
 import { Search } from './components/Search'
-import rectangleYellowMediumTop from './assets/rectangleYellowMediumTop.png'
 
 import { useMediaQuery } from '@uidotdev/usehooks'
 
@@ -20,11 +19,6 @@ export const Header = () => {
     if (isSmallDevice) {
         return (
             <header className={styles.header}>
-                <img
-                    className={styles.imgRectangleYellowMediumTop}
-                    src={rectangleYellowMediumTop}
-                    alt="rectangle yellow medium"
-                />
                 <div className={styles.iconContainer}>
                     <MenuIcon />
                     <LogoIcon />
@@ -36,11 +30,6 @@ export const Header = () => {
 
     return (
         <header className={styles.header}>
-            <img
-                className={styles.imgRectangleYellowMediumTop}
-                src={rectangleYellowMediumTop}
-                alt="rectangle yellow medium"
-            />
             <section className={styles.linksContainer}>
                 <LogoIcon />
                 {LINKS.map((link) => {
