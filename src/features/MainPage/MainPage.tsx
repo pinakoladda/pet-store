@@ -28,9 +28,11 @@ export const MainPage = () => {
                     title="Take a look at some of our pets"
                     subtitle="Whats new?"
                     products={DOGS_FOR_SALE}
+                    header
                 />
                 <BlueBanner />
                 <CardsContainer
+                    header
                     title="Our Products"
                     subtitle="Hard to choose right products for your pets?"
                     products={PET_PRODUCTS}

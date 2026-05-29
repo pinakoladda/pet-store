@@ -1,4 +1,4 @@
-.catgoryPage {
+.categoryPage {
     padding: 0 130px;
 }
 
@@ -13,4 +13,9 @@
     .pathContainer {
         margin-top: 12px;
     }
+}
+
+.container {
+    display: flex;
+    margin-top: 32px;
 }
