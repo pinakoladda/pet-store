@@ -1,10 +1,10 @@
-import { Typography } from '../../../../../shared/components/Typography'
 import styles from './index.module.css'
-import { GiftIcon } from '../../../../../shared/icons/GiftIcon'
-import { DotIcon } from '../../../../../shared/icons/DotIcon'
-import type { InfoFields, Product } from '../../../../../shared/types/product'
 import React from 'react'
 import { useMediaQuery } from '@uidotdev/usehooks'
+import type { InfoFields, Product } from '../../../shared/types/product'
+import { Typography } from '../../../shared/components/Typography'
+import { GiftIcon } from '../../../shared/icons/GiftIcon'
+import { DotIcon } from '../../../shared/icons/DotIcon'
 
 const LABEL_MAP: Record<InfoFields, string> = {
     gene: 'Gene:',

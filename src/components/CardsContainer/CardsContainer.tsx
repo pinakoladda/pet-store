@@ -1,10 +1,10 @@
 import { useMediaQuery } from '@uidotdev/usehooks'
-import { Button } from '../../../../components/Button'
-import { Typography } from '../../../../shared/components/Typography'
-import { ArrowIcon } from '../../../../shared/icons/ArrowIcon'
-import type { Product } from '../../../../shared/types/product'
 import { Card } from './Card/Card'
 import styles from './index.module.css'
+import type { Product } from '../../shared/types/product'
+import { Typography } from '../../shared/components/Typography'
+import { Button } from '../Button'
+import { ArrowIcon } from '../../shared/icons/ArrowIcon'
 
 interface CardsContainerProps {
     products: Product[]

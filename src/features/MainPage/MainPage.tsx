@@ -1,15 +1,15 @@
 import { Header } from '../../components/Header'
-import { CardsContainer } from './components/CardsContainer'
 import { SloganBanner } from './components/SloganBanner'
+import { CardsContainer } from '../../components/CardsContainer'
 import { DOGS_FOR_SALE } from '../../shared/data/dogs/dogs'
 import { PET_PRODUCTS } from '../../shared/data/products/products'
 import { BlueBanner } from './components/BlueBanner'
-import styles from './index.module.css'
 import { PetSellers } from './components/PetSellers'
 import { AdoptionBanner } from './components/AdoptionBanner'
 import { ListOfFields } from './components/ListOfFields'
 import { Footer } from '../../components/Footer'
 import rectangleYellowMediumTop from './assets/rectangleYellowMediumTop.png'
+import styles from './index.module.css'
 
 export const MainPage = () => {
     return (
