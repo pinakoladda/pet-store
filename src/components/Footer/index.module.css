@@ -16,7 +16,7 @@
 
 .iconsContainer {
     display: flex;
-    gap: 20px;
+    gap: 40px;
 }
 
 .paragraph {
@@ -49,7 +49,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
     .linksContainer {
         gap: 8px;
     }

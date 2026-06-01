@@ -61,3 +61,24 @@
 .cardsContainer {
     padding: 0;
 }
+
+.headerSectionSmallDevice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.filterContainer {
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width: 425px) {
+    .header {
+        flex-direction: column;
+        align-items: unset;
+        justify-content: unset;
+        margin-bottom: 16px;
+    }
+}

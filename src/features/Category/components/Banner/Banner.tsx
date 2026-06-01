@@ -6,12 +6,13 @@ import imgRectangleBlueLarge from './assets/rectangleBlueLarge.png'
 import imgRectangleBlueSmall from './assets/rectangleBlueSmall.png'
 import imgPuppiesLarge from './assets/groupOfPuppiesLarge.png'
 import imgPuppiesSmall from './assets/groupOfPuppiesSmall.png'
+import imgRectangleBlueXS from './assets/rectangleBlueXS.png'
 
 import styles from './index.module.css'
 import { useMediaQuery } from '@uidotdev/usehooks'
 
 export const Banner = () => {
-    const isSmallDevice = useMediaQuery('only screen and (max-width : 1350px)')
+    const isSmallDevice = useMediaQuery('only screen and (max-width : 500px)')
 
     return (
         <main className={styles.banner}>
@@ -30,6 +31,13 @@ export const Banner = () => {
                 <h1 className={styles.title}>One more friend</h1>
                 <Typography className={styles.subtitle} weight="bold">
                     Thousands more fun!
+                    {isSmallDevice && (
+                        <img
+                            className={styles.imgRectangleBlueXS}
+                            src={imgRectangleBlueXS}
+                            alt="small blue rectangle"
+                        />
+                    )}
                 </Typography>
                 <Typography className={styles.paragraph} weight="medium">
                     Having a pet means you have more joy, a new friend, a happy

@@ -33,3 +33,9 @@
         padding: 0 16px;
     }
 }
+
+@media screen and (max-width: 425px) {
+    .container {
+        margin-top: 22px;
+    }
+}
