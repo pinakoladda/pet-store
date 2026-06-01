@@ -1,5 +1,6 @@
 .cardsWrapper {
     flex: 1 1 auto;
+    margin-bottom: 60px;
 }
 .header {
     display: flex;

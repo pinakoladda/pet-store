@@ -1,6 +1,7 @@
 import { CardsContainer } from '../../../../components/CardsContainer'
 import { Typography } from '../../../../shared/components/Typography'
 import { DOGS_FOR_SALE } from '../../../../shared/data/dogs/dogs'
+import { Pagination } from '../Pagination'
 import styles from './index.module.css'
 
 export const SectionCardsWrapper = () => {
@@ -37,6 +38,9 @@ export const SectionCardsWrapper = () => {
                 header={false}
                 products={DOGS_FOR_SALE}
             />
+            <footer className={styles.footer}>
+                <Pagination />
+            </footer>
         </main>
     )
 }

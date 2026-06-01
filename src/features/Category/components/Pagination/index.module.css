@@ -1,0 +1,30 @@
+.pagination {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: 356px;
+    width: 100%;
+}
+
+.pageNum {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-primary);
+    padding: 6px 12px;
+}
+
+.pageNum[data-variant='current'] {
+    background-color: var(--color-primary);
+    color: var(--color-neutral-0);
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 420px) {
+    .pagination {
+        gap: 4px;
+    }
+}
