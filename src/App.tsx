@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { Category } from './features/Category'
+import { CategoryPage } from './features/CategoryPage'
 import { MainPage } from './features/MainPage'
+import { ProductDetailPage } from './features/ProductDetailPage'
 
 function App() {
     return (
@@ -9,7 +10,10 @@ function App() {
                 <Route path="/" element={<MainPage />} />
             </Routes>
             <Routes>
-                <Route path="/category" element={<Category />} />
+                <Route path="/category" element={<CategoryPage />} />
+            </Routes>
+            <Routes>
+                <Route path="/product" element={<ProductDetailPage />} />
             </Routes>
         </BrowserRouter>
     )

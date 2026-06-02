@@ -12,9 +12,11 @@ interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
     size: 'M' | 'L'
     disabled?: true
     className?: string
+    textWeight?: 'medium' | 'bold'
 }
 
 export const Button = ({
+    textWeight,
     className,
     children,
     variant,
@@ -26,7 +28,7 @@ export const Button = ({
 }: ButtonProps) => {
     return (
         <button
-            className={cn(className, styles.button)}
+            className={cn(styles.button, className)}
             data-variant={variant}
             data-size={size}
             {...props}
@@ -37,7 +39,7 @@ export const Button = ({
             {iconBefore}
             {children && (
                 <Typography
-                    weight="medium"
+                    weight={textWeight || 'medium'}
                     variant={size === 'L' ? 'body2' : 'body3'}
                 >
                     {children}

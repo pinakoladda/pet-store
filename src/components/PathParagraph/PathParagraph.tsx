@@ -1,4 +1,4 @@
-import { Typography } from '../../../../shared/components/Typography'
+import { Typography } from '../../shared/components/Typography'
 import styles from './index.module.css'
 
 interface PathParagraphProps {
