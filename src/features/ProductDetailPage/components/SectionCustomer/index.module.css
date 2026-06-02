@@ -1,0 +1,29 @@
+.sectionCustomer {
+    margin: 44px 16px 26px;
+    padding: 0 16px;
+}
+
+.header {
+    margin-bottom: 12px;
+}
+
+.photos {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.img {
+    width: 248px;
+    height: 340px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.dotsContainer {
+    margin-top: 24px;
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+}

@@ -1,3 +1,4 @@
+import React from 'react'
 import { Typography } from '../../shared/components/Typography'
 import styles from './index.module.css'
 
@@ -10,7 +11,7 @@ export const PathParagraph = ({ path }: PathParagraphProps) => {
         <div className={styles.pathContainer}>
             {path.map((route, index) => {
                 return (
-                    <>
+                    <React.Fragment key={route}>
                         <Typography
                             className={styles.pathText}
                             variant="body3"
@@ -25,7 +26,7 @@ export const PathParagraph = ({ path }: PathParagraphProps) => {
                                 weight="medium"
                             >{`>`}</Typography>
                         )}
-                    </>
+                    </React.Fragment>
                 )
             })}
         </div>

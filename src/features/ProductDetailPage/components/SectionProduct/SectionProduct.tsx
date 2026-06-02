@@ -68,7 +68,7 @@ export const SectionProduct = () => {
                 <section className={styles.info}>
                     {INFO_FIELDS.map((field) => {
                         return (
-                            <div className={styles.infoField}>
+                            <div className={styles.infoField} key={field.name}>
                                 <Typography
                                     variant="body3"
                                     weight="medium"
