@@ -1,0 +1,46 @@
+.productLabel {
+    padding: 9px 12px;
+    background: linear-gradient(
+        102.87deg,
+        #fceed5 6.43%,
+        #fceed5 78.33%,
+        #ffe7ba 104.24%
+    );
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.labelParagraph {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--color-primary);
+}
+
+.productShare {
+    max-width: 240px;
+    padding: 6px 10px 8px;
+    display: flex;
+    gap: 21px;
+}
+
+.labelShare {
+    color: var(--color-primary);
+    margin-left: 8px;
+}
+
+.shareContainer {
+    display: flex;
+}
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.productShare {
+    display: flex;
+    align-items: center;
+}

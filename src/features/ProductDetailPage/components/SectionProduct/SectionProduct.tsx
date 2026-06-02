@@ -2,6 +2,7 @@ import { Button } from '../../../../components/Button'
 import { PathParagraph } from '../../../../components/PathParagraph'
 import { Typography } from '../../../../shared/components/Typography'
 import { ChatIcon } from '../../../../shared/icons/ChatIcon'
+import { ImagesCarousel } from './components/ImagesCarousel'
 import styles from './index.module.css'
 
 const INFO_FIELDS = [
@@ -27,62 +28,65 @@ const PRODUCT_PATH = ['Home', 'Dog', 'Large Dog', 'Shiba Inu Sepia']
 export const SectionProduct = () => {
     return (
         <main className={styles.sectionProduct}>
-            <PathParagraph path={PRODUCT_PATH} />
-            <section className={styles.mainInfo}>
-                <Typography variant="body3" weight="medium">
-                    SKU #1000078
-                </Typography>
-                <Typography
-                    className={styles.productName}
-                    variant="heading4"
-                    weight="bold"
-                >
-                    Shiba Inu Sepia
-                </Typography>
-                <Typography variant="body1" weight="bold">
-                    34.000.000 VND
-                </Typography>
-            </section>
-            <div className={styles.btnContainer}>
-                <Button
-                    className={styles.btn}
-                    variant="default"
-                    size="L"
-                    textWeight="bold"
-                >
-                    Contact us
-                </Button>
-                <Button
-                    textWeight="bold"
-                    className={styles.btn}
-                    variant="outline"
-                    size="L"
-                    iconBefore={<ChatIcon />}
-                >
-                    Chat with Monito
-                </Button>
-            </div>
-            <section className={styles.info}>
-                {INFO_FIELDS.map((field) => {
-                    return (
-                        <div className={styles.infoField}>
-                            <Typography
-                                variant="body3"
-                                weight="medium"
-                                className={styles.paragraph}
-                            >
-                                {field.name}
-                            </Typography>
-                            <Typography
-                                variant="body3"
-                                weight="medium"
-                                className={styles.paragraph}
-                            >
-                                {field.value}
-                            </Typography>
-                        </div>
-                    )
-                })}
+            <ImagesCarousel />
+            <section className={styles.infoContainer}>
+                <PathParagraph path={PRODUCT_PATH} />
+                <section className={styles.mainInfo}>
+                    <Typography variant="body3" weight="medium">
+                        SKU #1000078
+                    </Typography>
+                    <Typography
+                        className={styles.productName}
+                        variant="heading4"
+                        weight="bold"
+                    >
+                        Shiba Inu Sepia
+                    </Typography>
+                    <Typography variant="body1" weight="bold">
+                        34.000.000 VND
+                    </Typography>
+                </section>
+                <div className={styles.btnContainer}>
+                    <Button
+                        className={styles.btn}
+                        variant="default"
+                        size="L"
+                        textWeight="bold"
+                    >
+                        Contact us
+                    </Button>
+                    <Button
+                        textWeight="bold"
+                        className={styles.btn}
+                        variant="outline"
+                        size="L"
+                        iconBefore={<ChatIcon />}
+                    >
+                        Chat with Monito
+                    </Button>
+                </div>
+                <section className={styles.info}>
+                    {INFO_FIELDS.map((field) => {
+                        return (
+                            <div className={styles.infoField}>
+                                <Typography
+                                    variant="body3"
+                                    weight="medium"
+                                    className={styles.paragraph}
+                                >
+                                    {field.name}
+                                </Typography>
+                                <Typography
+                                    variant="body3"
+                                    weight="medium"
+                                    className={styles.paragraph}
+                                >
+                                    {field.value}
+                                </Typography>
+                            </div>
+                        )
+                    })}
+                </section>
             </section>
         </main>
     )
