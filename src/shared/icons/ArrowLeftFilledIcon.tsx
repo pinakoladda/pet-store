@@ -1,0 +1,28 @@
+export const ArrowLeftFilledIcon = () => {
+    return (
+        <svg
+            width="52"
+            height="52"
+            viewBox="0 0 52 52"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <rect
+                x="5"
+                y="5"
+                width="42"
+                height="42"
+                rx="20"
+                fill="white"
+                fill-opacity="0.4"
+            />
+            <path
+                d="M28.1667 32.5L21.6667 26L28.1667 19.5"
+                stroke="white"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    )
+}

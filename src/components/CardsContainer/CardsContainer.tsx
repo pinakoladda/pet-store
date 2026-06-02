@@ -12,6 +12,7 @@ interface CardsContainerProps {
     title?: string
     subtitle?: string
     header: boolean
+    button: boolean
     className?: string
 }
 
@@ -20,6 +21,7 @@ export const CardsContainer = ({
     title,
     subtitle,
     header,
+    button,
     className,
 }: CardsContainerProps) => {
     const isSmallDevice = useMediaQuery('only screen and (max-width : 1350px)')
@@ -44,14 +46,16 @@ export const CardsContainer = ({
                         </Typography>
                     </div>
                     <div className={styles.container}>
-                        <Button
-                            size="M"
-                            variant="outline"
-                            iconAfter={<ArrowIcon />}
-                            className={styles.btnLargeDevice}
-                        >
-                            View more
-                        </Button>
+                        {button && (
+                            <Button
+                                size="M"
+                                variant="outline"
+                                iconAfter={<ArrowIcon />}
+                                className={styles.btnLargeDevice}
+                            >
+                                View more
+                            </Button>
+                        )}
                     </div>
                 </header>
             )}
@@ -60,14 +64,16 @@ export const CardsContainer = ({
                     return <Card key={product.id} {...product} />
                 })}
             </section>
-            <Button
-                size="M"
-                variant="outline"
-                iconAfter={<ArrowIcon />}
-                className={styles.btnSmallDevice}
-            >
-                View more
-            </Button>
+            {button && (
+                <Button
+                    size="M"
+                    variant="outline"
+                    iconAfter={<ArrowIcon />}
+                    className={styles.btnSmallDevice}
+                >
+                    View more
+                </Button>
+            )}
         </main>
     )
 }

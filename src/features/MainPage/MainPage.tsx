@@ -29,10 +29,12 @@ export const MainPage = () => {
                     subtitle="Whats new?"
                     products={DOGS_FOR_SALE}
                     header
+                    button
                 />
                 <BlueBanner />
                 <CardsContainer
                     header
+                    button
                     title="Our Products"
                     subtitle="Hard to choose right products for your pets?"
                     products={PET_PRODUCTS}
