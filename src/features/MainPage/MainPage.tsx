@@ -13,7 +13,7 @@ import styles from './index.module.css'
 
 export const MainPage = () => {
     return (
-        <main className={styles.main}>
+        <main className={styles.mainPage}>
             <div className={styles.bannerContainer} data-variant="header">
                 <img
                     className={styles.imgRectangleYellowMediumTop}

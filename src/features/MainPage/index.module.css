@@ -1,3 +1,8 @@
+.mainPage {
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
 .bannerContainer {
     background: linear-gradient(
         102.87deg,
@@ -6,8 +11,7 @@
         #ffe7ba 104.24%
     );
     padding: 0 130px;
-    /* margin: 0 auto;
-    width: 100%; */
+    position: relative;
 }
 
 .bannerContainer[data-variant='header'] {
@@ -19,7 +23,6 @@
 
 .container {
     padding: 0 130px;
-    /* width: 100%; */
 }
 
 @media screen and (max-width: 1350px) {

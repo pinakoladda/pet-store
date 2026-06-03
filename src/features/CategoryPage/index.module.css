@@ -1,5 +1,7 @@
 .categoryPage {
     padding: 0 130px;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 .pathContainer {
@@ -20,6 +22,8 @@
         #fceed5 78.33%,
         #ffe7ba 104.24%
     );
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 @media screen and (max-width: 1350px) {
