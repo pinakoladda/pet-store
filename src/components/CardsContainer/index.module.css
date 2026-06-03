@@ -1,7 +1,6 @@
 .cardsContainer {
     padding: 60px 0 0;
     background-color: var(--color-neutral-0);
-    max-width: 1500px;
     margin: 0 auto;
 }
 
@@ -57,5 +56,8 @@
     }
     .cards {
         margin-bottom: 16px;
+    }
+    .cards[data-variant='false'] {
+        margin-bottom: 0px;
     }
 }

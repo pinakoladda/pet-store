@@ -59,7 +59,7 @@ export const CardsContainer = ({
                     </div>
                 </header>
             )}
-            <section className={styles.cards}>
+            <section className={styles.cards} data-variant={button}>
                 {products.map((product) => {
                     return <Card key={product.id} {...product} />
                 })}

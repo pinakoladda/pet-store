@@ -27,3 +27,26 @@
     gap: 6px;
     justify-content: center;
 }
+
+@media screen and (min-width: 1600px) {
+    .photos {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sectionCustomer {
+        margin: 44px 0 6px;
+        padding: 0 0 0 17px;
+    }
+    .photos {
+        gap: 14px;
+    }
+    .dotsContainer {
+        margin-top: 18px;
+        gap: 5px;
+    }
+    .header {
+        margin-bottom: 16px;
+    }
+}

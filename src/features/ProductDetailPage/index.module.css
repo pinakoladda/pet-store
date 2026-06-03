@@ -1,5 +1,11 @@
 .productDetailPage {
+    max-width: 1700px;
+    margin: 0 auto;
     padding: 0 130px;
+}
+
+.container {
+    padding: 0;
 }
 
 .footerContainer {
@@ -16,9 +22,18 @@
 
 @media screen and (max-width: 1350px) {
     .productDetailPage {
+        padding: 0;
+    }
+    .container {
         padding: 0 16px;
     }
     .footerContainer {
         padding: 0 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footerContainer {
+        margin-top: 60px;
     }
 }

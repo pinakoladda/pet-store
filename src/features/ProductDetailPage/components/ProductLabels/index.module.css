@@ -1,43 +1,3 @@
-.carousel {
-    margin-bottom: 27px;
-    position: relative;
-}
-
-.imgMain {
-    width: 560px;
-    height: 476px;
-    border-radius: 10px;
-    object-fit: cover;
-}
-
-.imgSecondary {
-    width: 94px;
-    height: 94px;
-    border-radius: 6px;
-    object-fit: cover;
-    margin-top: 12px;
-}
-
-.photoContainer {
-    max-width: 560px;
-    width: 100%;
-    display: flex;
-    gap: 12px;
-    flex-wrap: nowrap;
-    overflow: scroll;
-}
-
-.imgArrowRight {
-    position: absolute;
-    top: 226px;
-    right: 16px;
-}
-.imgArrowLeft {
-    position: absolute;
-    top: 226px;
-    left: 16px;
-}
-
 .productLabel {
     padding: 9px 12px;
     background: linear-gradient(
@@ -63,6 +23,7 @@
     padding: 6px 10px 8px;
     display: flex;
     gap: 21px;
+    margin-top: 17px;
 }
 
 .labelShare {
@@ -83,4 +44,30 @@
 .productShare {
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1050px) {
+    .productLabel {
+        max-width: 560px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .productShare {
+        margin: 17px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .productLabel {
+        margin-top: 26px;
+        flex-direction: column;
+        padding: 12px 14px;
+        gap: 8px;
+    }
+    .labelParagraph {
+        gap: 9px;
+    }
+    .productShare {
+        display: none;
+    }
 }

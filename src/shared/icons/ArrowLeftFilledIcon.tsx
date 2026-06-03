@@ -14,7 +14,7 @@ export const ArrowLeftFilledIcon = () => {
                 height="42"
                 rx="20"
                 fill="white"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
             />
             <path
                 d="M28.1667 32.5L21.6667 26L28.1667 19.5"

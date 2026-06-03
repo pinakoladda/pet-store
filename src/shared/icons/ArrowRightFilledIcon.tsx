@@ -13,7 +13,7 @@ export const ArrowRightFilledIcon = () => {
                 rx="20"
                 transform="matrix(-1 0 0 1 47 5)"
                 fill="white"
-                fill-opacity="0.4"
+                fillOpacity="0.4"
             />
             <path
                 d="M23.8335 32.5L30.3335 26L23.8335 19.5"

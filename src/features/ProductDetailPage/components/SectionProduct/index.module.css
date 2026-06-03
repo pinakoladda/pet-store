@@ -3,6 +3,7 @@
     border: 1px solid #ebeeef;
     border-radius: 20px;
     display: flex;
+    justify-content: center;
     gap: 34px;
 }
 
@@ -10,7 +11,7 @@
     margin: 18px 0;
 }
 
-.mainInfo p:first-child {
+.productArticle {
     color: var(--color-neutral-40);
 }
 .mainInfo p:last-child {
@@ -32,6 +33,11 @@
     font-weight: 700;
 }
 
+.buttonOutline {
+    font-weight: 700;
+    flex: 0 0 auto;
+}
+
 .infoField {
     display: flex;
     justify-content: space-between;
@@ -45,4 +51,63 @@
     max-width: 205px;
     text-align: left;
     color: var(--color-neutral-60);
+}
+
+.curtain {
+    margin: 0 auto;
+}
+
+.sectionShare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 22px 9px 0;
+    padding: 8px 0;
+}
+
+.infoParagraphSmallDevice {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.shareContainer {
+    display: flex;
+    gap: 8px;
+}
+
+@media screen and (max-width: 1050px) {
+    .sectionProduct {
+        flex-direction: column;
+        padding: 12px 12px 22px 12px;
+        gap: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .sectionProduct {
+        border-bottom: unset;
+        padding: 10px 0 0 16px;
+        box-shadow: 0px -6px 6px 0px #0000000f;
+    }
+    .btnContainer {
+        gap: 11px;
+        justify-content: space-between;
+        margin: 0 16px 19px 0;
+    }
+    .mainInfo {
+        margin: 8px 0 16px;
+    }
+    .productName {
+        color: var(--color-neutral-100);
+        margin: 0 0 2px 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btnContainer {
+        gap: 11px;
+        justify-content: space-between;
+        margin: 0 16px 19px 0;
+        flex-direction: column;
+    }
 }

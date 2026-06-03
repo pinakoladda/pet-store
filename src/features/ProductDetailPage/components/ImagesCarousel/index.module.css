@@ -1,0 +1,90 @@
+.carousel {
+    margin-bottom: 27px;
+    position: relative;
+}
+
+.imgMain {
+    width: 560px;
+    height: 476px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.imgSecondary {
+    width: 94px;
+    height: 94px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.photosContainer {
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin-top: 12px;
+}
+
+.imgArrowRight {
+    position: absolute;
+    top: 226px;
+    right: 16px;
+}
+.imgArrowLeft {
+    position: absolute;
+    top: 226px;
+    left: 16px;
+}
+
+.imgInfoSmallDevice {
+    position: absolute;
+    top: 64px;
+    right: 16px;
+}
+
+.imgArrowLeftSmallDevice {
+    position: absolute;
+    top: 64px;
+    left: 16px;
+}
+
+@media screen and (max-width: 1050px) {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .photosContainer {
+        max-width: unset;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .imgMain {
+        width: 100dvw;
+        border-radius: unset;
+    }
+    .photosContainer {
+        margin-left: 11px;
+        gap: 9px;
+    }
+    .imgSecondary {
+        width: 68px;
+        height: 68px;
+    }
+    .imgArrowRight {
+        top: 273px;
+    }
+    .imgArrowLeft {
+        top: 273px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .photosContainer {
+        justify-content: unset;
+    }
+}
