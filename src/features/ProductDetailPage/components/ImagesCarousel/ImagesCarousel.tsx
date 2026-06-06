@@ -46,7 +46,10 @@ export const ImagesCarousel = () => {
         )
         const selectedImgPosition = selectedImg?.getBoundingClientRect().left
 
-        container?.scrollTo({ left: selectedImgPosition, behavior: 'smooth' })
+        container?.scrollTo({
+            left: selectedImgPosition,
+            behavior: 'smooth',
+        })
     }, [currentImgIndex])
 
     return (

@@ -20,6 +20,7 @@
     border-radius: 6px;
     object-fit: cover;
     box-sizing: border-box;
+    scroll-snap-align: start;
 }
 
 .imgSecondary[data-selected='true'] {
@@ -34,17 +35,21 @@
     flex-wrap: nowrap;
     overflow: scroll;
     margin-top: 12px;
+    box-sizing: border-box;
+    scroll-snap-type: x mandatory;
 }
 
 .imgArrowRight {
     position: absolute;
     top: 226px;
     right: 16px;
+    -webkit-tap-highlight-color: transparent;
 }
 .imgArrowLeft {
     position: absolute;
     top: 226px;
     left: 16px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .imgInfoSmallDevice {
@@ -77,8 +82,9 @@
         border-radius: unset;
     }
     .photosContainer {
-        margin-left: 11px;
         gap: 9px;
+        margin-left: 11px;
+        width: calc(100dvw - 11px);
     }
     .imgSecondary {
         width: 68px;

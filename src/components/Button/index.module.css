@@ -7,6 +7,8 @@
     justify-content: center;
     gap: 8px;
     box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
 }
 
 .button[data-variant='default'] {
@@ -47,11 +49,13 @@
     border: none;
 }
 
-.button:hover {
-    color: var(--color-neutral-0);
-    background-color: var(--color-primary-light);
-    border: none;
-    outline: none;
+@media (hover: hover) {
+    .button:hover {
+        color: var(--color-neutral-0);
+        background-color: var(--color-primary-light);
+        border: none;
+        outline: none;
+    }
 }
 
 .button:focus {

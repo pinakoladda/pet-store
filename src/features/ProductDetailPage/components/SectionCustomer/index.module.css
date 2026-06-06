@@ -11,7 +11,8 @@
     display: flex;
     gap: 12px;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .img {
@@ -19,6 +20,7 @@
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
+    scroll-snap-align: center;
 }
 
 .dotsContainer {
