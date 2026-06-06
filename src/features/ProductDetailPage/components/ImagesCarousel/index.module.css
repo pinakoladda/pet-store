@@ -1,6 +1,10 @@
 .carousel {
     margin-bottom: 27px;
+}
+
+.imgContainer {
     position: relative;
+    max-width: 560px;
 }
 
 .imgMain {
@@ -15,6 +19,11 @@
     height: 94px;
     border-radius: 6px;
     object-fit: cover;
+    box-sizing: border-box;
+}
+
+.imgSecondary[data-selected='true'] {
+    border: 3px solid #f1d092;
 }
 
 .photosContainer {
@@ -40,13 +49,13 @@
 
 .imgInfoSmallDevice {
     position: absolute;
-    top: 64px;
+    top: 16px;
     right: 16px;
 }
 
 .imgArrowLeftSmallDevice {
     position: absolute;
-    top: 64px;
+    top: 16px;
     left: 16px;
 }
 
@@ -76,10 +85,10 @@
         height: 68px;
     }
     .imgArrowRight {
-        top: 273px;
+        top: 50%;
     }
     .imgArrowLeft {
-        top: 273px;
+        top: 50%;
     }
 }
 
