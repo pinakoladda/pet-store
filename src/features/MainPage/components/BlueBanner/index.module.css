@@ -120,7 +120,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 412px) {
     .blueBanner {
         background-color: var(--color-secondary);
     }
