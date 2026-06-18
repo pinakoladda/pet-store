@@ -22,10 +22,10 @@ export const BlackAndWhiteIcon = () => {
                     y2="7.5"
                     gradientUnits="userSpaceOnUse"
                 >
-                    <stop stop-color="#242B33" />
-                    <stop offset="0.525942" stop-color="#242B33" />
-                    <stop offset="0.526042" stop-color="#D7D7D7" />
-                    <stop offset="1" stop-color="#D2D2D2" />
+                    <stop stopColor="#242B33" />
+                    <stop offset="0.525942" stopColor="#242B33" />
+                    <stop offset="0.526042" stopColor="#D7D7D7" />
+                    <stop offset="1" stopColor="#D2D2D2" />
                 </linearGradient>
             </defs>
         </svg>
